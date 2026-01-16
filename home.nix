@@ -62,6 +62,7 @@
     kdePackages.kruler
     jetbrains-toolbox
     thunar
+    thunar-vcs-plugin
     libreoffice-still
 
     waybar
@@ -79,7 +80,9 @@
     papirus-icon-theme
     adwaita-icon-theme
     gtk-engine-murrine
-    gruvbox-material-gtk-theme
+    material-black-colors
+    themechanger
+    bibata-cursors
 
     jetbrains-mono
     nerd-fonts.symbols-only
@@ -88,6 +91,7 @@
     noto-fonts
     noto-fonts-color-emoji
 
+    gvfs
     qt5.qtwayland
     qt6.qtwayland
 

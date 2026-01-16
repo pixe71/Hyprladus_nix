@@ -84,7 +84,19 @@
      wireplumber
      polkit
      blueman
+     thinkfan
+     greetd
   ];
+
+  services.greetd = {
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd start-hyprland";
+        user = "greeter";
+      };
+    };
+  };
   
   programs.hyprland.enable = true;
 
