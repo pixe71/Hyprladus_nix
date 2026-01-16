@@ -72,8 +72,15 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      hyprland
-     xdg-desktop-portal
+     hyprutils
+     hyprland-qtutils
+     hyprland-qt-support
+     networkmanager
+     networkmanagerapplet
      pipewire
+     wireplumber
+     polkit
+     blueman
   ];
   
   programs.hyprland.enable = true;

@@ -26,20 +26,85 @@
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
     htop
     btop
+    ncdu
     bat
+    git
+    wget
+    bat
+    btop
+    fastfetch
+    zoxide
+    fzf
+    jq
+    cliphist
+    brightnessctl
+    pamixer
+    cava
+    udiskie
+    tree
+    eza
+    pavucontrol
+    caffeine-ng
+    spotify-player
+    docker
+
+    kitty
     vim
     neovim
-    wget
-    git
-    kitty
+    vscode
+
     librewolf
-    vencord
+    vesktop
     spotify
-    spotify-player
+    feh
+    kdePackages.okular
+    kdePackages.kruler
+    jetbrains-toolbox
+    thunar
+    libreoffice-still
+
     waybar
     rofi
-    xfce.thunar
-    wal
+    pywal
+    grim
+    slurp
+    wl-clipboard
+    swww
+    swaynotificationcenter
+    wlogout
+
+    nwg-look
+    nwg-displays
+    papirus-icon-theme
+    adwaita-icon-theme
+    gtk-engine-murrine
+    gruvbox-material-gtk-theme
+
+    jetbrains-mono
+    nerd-fonts.symbols-only
+    nerd-fonts._0xproto
+    dejavu_fonts
+    noto-fonts
+    noto-fonts-color-emoji
+
+    qt5.qtwayland
+    qt6.qtwayland
+
+    hyprpicker
+    hyprlock
+    hypridle
+    hyprsunset
+    hyprcursor
+    hyprland
+    hyprpicker
+    hyprlock
+    hypridle
+    hyprsunset
+    hyprcursor
+    hyprlang
+    hyprgraphics
+    aquamarine
+    xdg-desktop-portal-hyprland
   ];
 
   # Allow unfree packages
