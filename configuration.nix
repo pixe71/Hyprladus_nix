@@ -12,6 +12,8 @@
       modules/greetd.nix
       modules/nvidia.nix
       modules/thunar.nix
+      modules/gaming.nix
+      modules/battery.nix
     ];
 
   # Bootloader.

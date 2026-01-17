@@ -48,10 +48,22 @@
       #bindkey '^[OA' history-substring-search-up
       #bindkey '^[[B' history-substring-search-down
       #bindkey '^[OB' history-substring-search-down
+
+      # Ctrl + Arrows
+      bindkey "^[[1;5D" backward-word
+      bindkey "^[[1;5C" forward-word
+
+      # Ctrl + Backspace : del left word
+      bindkey "^H" backward-kill-word
+      bindkey "^[^H" backward-kill-word
+      bindkey "^[[3;5~" kill-word  # parfois nécessaire
+
+      # Ctrl + Delete : del right word
+      bindkey "^[[3;5~" kill-word
     '';
 
     shellAliases = {
-      update = "sudo nixos-rebuild-secure switch --flake ~/nixos-config/ --impure";
+      update = "sudo nixos-rebuild switch --flake ~/.nixconfig/ --impure";
       clean = "sudo nix-collect-garbage -d";
       dockerclean = "sudo docker system prune -a";
       journalclean = "sudo journalctl --vacuum-time=7d";
