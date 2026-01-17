@@ -18,5 +18,5 @@
   # Luminosity for external display:
   hardware.i2c.enable = true;
 
-  users.users.fellwin.extraGroups = [ "i2c" ];
+  users.users.sacha.extraGroups = [ "i2c" ];
 }

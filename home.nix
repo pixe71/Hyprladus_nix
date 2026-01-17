@@ -2,6 +2,12 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    home-modules/librewolf.nix
+    home-modules/vscode.nix
+    home-modules/zsh.nix
+  ];
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "sacha";
@@ -53,14 +59,12 @@
     vim
     neovim
 
-    librewolf
     vesktop
     spotify
     feh
     kdePackages.okular
     kdePackages.kruler
     jetbrains-toolbox
-    thunar
     libreoffice-still
 
     waybar

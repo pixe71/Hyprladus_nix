@@ -21,23 +21,13 @@
     nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
-	    modules = [
-          modules/configuration.nix
-          modules/greetd.nix
-          modules/blueman.nix
-        ];
+	    modules = [ ./configuration.nix ];
       };
     };
     homeConfigurations = {
       sacha = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-	    modules = [
-          home-modules/home.nix
-          home-modules/zsh.nix
-          home-modules/vscode.nix
-          home-modules/thunar.nix
-          home-modules/librewoldf.nix
-        ];
+	    modules = [ ./home.nix ];
       }; 
     };
   };

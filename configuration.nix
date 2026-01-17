@@ -6,8 +6,12 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
+      modules/bluetooth.nix
+      modules/greetd.nix
+      modules/nvidia.nix
+      modules/thunar.nix
     ];
 
   # Bootloader.
@@ -90,6 +94,7 @@
      polkit
      blueman
      thinkfan
+     lm_sensors
   ];
   
   programs.hyprland.enable = true;
