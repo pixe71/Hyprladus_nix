@@ -19,6 +19,11 @@
 
   # Linux kernel
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  
+  # Shell
+  environment.shells = with pkgs; [ zsh ];
+  users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -66,7 +71,7 @@
   };
 
   # Enable automatic login for the user.
-  services.getty.autologinUser = "sacha";
+  # services.getty.autologinUser = "sacha";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -92,7 +97,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd start-hyprland";
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd start-hyprland";
         user = "greeter";
       };
     };
@@ -127,7 +132,7 @@
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  networking.firewall.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
