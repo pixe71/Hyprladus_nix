@@ -9,6 +9,13 @@
 
   programs.zsh = {
     enable = true;
+
+    completionInit = ''
+      autoload -Uz compinit
+      compinit -C
+    '';
+    
+    zprof.enable = false;
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
@@ -23,27 +30,24 @@
       ignoreSpace = true;
     };
 
-    plugins = [
-      {
-        name = "zsh-autopair";
-        src = pkgs.zsh-autopair;
-        file = "share/zsh/zsh-autopair/autopair.zsh";
-      }
-    ];
-
     # .zshrc
     initContent = ''
       # pywal
       # (cat ~/.cache/wal/sequences &)
+
+      # Enable Powerlevel10k instant prompt. Should stay close to the top.
+      if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+        source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+      fi
 
       # Configuration of powerlevel10k
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
       [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
       # Configuration of historySubstringSearch
-      zmodload zsh/terminfo
-      bindkey "$terminfo[kcuu1]" history-substring-search-up
-      bindkey "$terminfo[kcud1]" history-substring-search-down
+      # zmodload zsh/terminfo
+      # bindkey "$terminfo[kcuu1]" history-substring-search-up
+      # bindkey "$terminfo[kcud1]" history-substring-search-down
       #bindkey '^[[A' history-substring-search-up
       #bindkey '^[OA' history-substring-search-up
       #bindkey '^[[B' history-substring-search-down

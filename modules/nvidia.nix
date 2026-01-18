@@ -13,6 +13,14 @@
     # accessible via `nvidia-settings`.
     nvidiaSettings = true;
     open = false;
+    prime = {
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
+      intelBusId = "PCI:0:2:0";
+      nvidiaBusId = "PCI:1:0:0";
+    };
   };
 
   # Luminosity for external display:

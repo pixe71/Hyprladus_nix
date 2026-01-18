@@ -41,6 +41,10 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  security.sudo.extraConfig = ''
+    Defaults insults
+  '';
+
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
@@ -114,6 +118,8 @@
   services.playerctld.enable = true;
   services.dbus.enable = true;
   services.tumbler.enable = true;
+  services.thinkfan.enable = true;
+  services.udiskie.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -122,11 +128,6 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

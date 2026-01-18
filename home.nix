@@ -4,8 +4,9 @@
 {
   imports = [
     home-modules/librewolf.nix
-    home-modules/vscode.nix
     home-modules/zsh.nix
+    home-modules/lazyvim/lazyvim.nix
+    home-modules/vscode/vscode.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -57,7 +58,6 @@
 
     kitty
     vim
-    neovim
 
     vesktop
     spotify
@@ -66,6 +66,7 @@
     kdePackages.kruler
     jetbrains-toolbox
     libreoffice-still
+    mongodb-compass
 
     waybar
     rofi
@@ -154,8 +155,8 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  
-  programs.bash = {
-    enable = true;
-  };
+
+  # programs.bash = {
+  #   enable = true;
+  # };
 }

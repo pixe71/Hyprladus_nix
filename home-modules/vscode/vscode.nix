@@ -5,7 +5,7 @@
 }: {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium;
+    package = pkgs.vscode;
 
     # VSCode extensions
     profiles.default.extensions =
@@ -14,6 +14,8 @@
         vscodevim.vim
         ritwickdey.liveserver
         github.copilot
+        leonardssh.vscord
+        bbenoist.nix 
 
         # Extensions for web devlopment
         # General
