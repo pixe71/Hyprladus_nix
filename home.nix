@@ -33,13 +33,11 @@
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
     htop
-    btop
     ncdu
     bat
     git
     wget
     bat
-    btop
     fastfetch
     zoxide
     fzf
@@ -55,12 +53,16 @@
     caffeine-ng
     spotify-player
     docker
+    zip
+    unzip
     gemini-cli
+    gk-cli
 
     kitty
     vim
 
     vesktop
+    discord
     spotify
     feh
     kdePackages.okular

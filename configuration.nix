@@ -102,6 +102,8 @@
      blueman
      thinkfan
      lm_sensors
+     btop-cuda
+     python314Packages.nvidia-ml-py
   ];
   
   programs.hyprland.enable = true;

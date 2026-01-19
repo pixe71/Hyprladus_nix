@@ -79,15 +79,9 @@
           installation_mode = "force_installed";
         };
 
-        # Vimium
-        "{d7742d87-e61d-4b78-b8a1-b469842139fa}" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi";
-          installation_mode = "force_installed";
-        };
-
         # Netflix household no more
         "{netflix-household-no-more@yourdomain.com}" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/file/4593495/netflix_household_no_more-2.0.xpi";
           installation_mode = "force_installed";
         };
       };

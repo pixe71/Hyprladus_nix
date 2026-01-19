@@ -46,7 +46,7 @@
       let
         plugins = with pkgs.vimPlugins; [
           # LazyVim
-          monokai-pro-nvim
+          { name = "monokai-pro.nvim"; path = monokai-pro-nvim; }
           LazyVim
           bufferline-nvim
           cmp-buffer
