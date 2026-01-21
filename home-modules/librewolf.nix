@@ -55,17 +55,17 @@
           installation_mode = "force_installed";
         };
 
-        # KeePassXC-Browser
-        "keepassxc-browser@keepassxc.org" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/keepassxc-browser/latest.xpi";
-          installation_mode = "force_installed";
-        };
+        # # KeePassXC-Browser
+        # "keepassxc-browser@keepassxc.org" = {
+        #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/keepassxc-browser/latest.xpi";
+        #   installation_mode = "force_installed";
+        # };
 
-        # Unhook (YouTube recommended videos)
-        "myallychou@gmail.com" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/youtube-recommended-videos/latest.xpi";
-          installation_mode = "force_installed";
-        };
+        # # Unhook (YouTube recommended videos)
+        # "myallychou@gmail.com" = {
+        #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/youtube-recommended-videos/latest.xpi";
+        #   installation_mode = "force_installed";
+        # };
 
         # Violentmonkey
         "{aecec67f-0d10-4fa7-b7c7-609a2db280cf}" = {

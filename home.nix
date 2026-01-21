@@ -8,6 +8,7 @@
     home-modules/lazyvim/lazyvim.nix
     home-modules/vscode/vscode.nix
     home-modules/git.nix
+    home-modules/android.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -89,6 +90,7 @@
     ispell
     copilot-language-server
     aider-chat-full
+    graphviz
 
     firefox
     vesktop
@@ -101,8 +103,7 @@
     libreoffice-still
     mongodb-compass
     prismlauncher
-    android-studio
-    android-studio-tools
+    qbittorrent
 
     waybar
     rofi

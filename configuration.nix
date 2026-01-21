@@ -16,6 +16,7 @@
       modules/battery.nix
       modules/thinkfan.nix
       modules/docker.nix
+      modules/virtualbox.nix
     ];
 
   # Bootloader.
@@ -78,7 +79,7 @@
   users.users.sacha = {
     isNormalUser = true;
     description = "sacha";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "kvm" ];
     packages = with pkgs; [];
   };
 
@@ -105,6 +106,7 @@
      lm_sensors
      btop-cuda
      python314Packages.nvidia-ml-py
+     throttled
   ];
   
   programs.hyprland.enable = true;
@@ -123,6 +125,7 @@
   services.dbus.enable = true;
   services.tumbler.enable = true;
   services.udisks2.enable = true;
+  services.throttled.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
