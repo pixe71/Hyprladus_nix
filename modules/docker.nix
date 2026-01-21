@@ -4,7 +4,7 @@
   lib,
   ...
 }: {
-  users.users.sacha.extraGroups = [
+  users.users.luc.extraGroups = [
     "docker"
   ];
   virtualisation.docker.enable = true;
