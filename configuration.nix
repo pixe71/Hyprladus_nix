@@ -52,7 +52,7 @@
   time.timeZone = "Europe/Paris";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "fr_FR.UTF-8";
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "fr_FR.UTF-8";
@@ -76,15 +76,15 @@
   console.keyMap = "fr";
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.sacha = {
+  users.users.luc = {
     isNormalUser = true;
-    description = "sacha";
+    description = "luc";
     extraGroups = [ "networkmanager" "wheel" "kvm" ];
     packages = with pkgs; [];
   };
 
   # Enable automatic login for the user.
-  # services.getty.autologinUser = "sacha";
+  # services.getty.autologinUser = "luc";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
