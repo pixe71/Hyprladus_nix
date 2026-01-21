@@ -27,13 +27,13 @@
           home-manager.nixosModules.home-manager {
             # home-manager.useGlobalPkgs = true;
             # home-manager.useUserPackages = true;
-            home-manager.users.sacha = import ./home.nix;
+            home-manager.users.luc = import ./home.nix;
           }
         ];
       };
     };
     # homeConfigurations = {
-    #   sacha = home-manager.lib.homeManagerConfiguration {
+    #   luc = home-manager.lib.homeManagerConfiguration {
     #     inherit pkgs;
     #     modules = [ 
     #         ./home.nix 
