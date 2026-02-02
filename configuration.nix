@@ -95,6 +95,7 @@
      networkmanager
      networkmanagerapplet
      btop-cuda
+     git
   ];
   
   programs.hyprland.enable = true;
