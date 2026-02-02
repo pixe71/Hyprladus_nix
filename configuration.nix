@@ -9,14 +9,10 @@
     [
       ./hardware-configuration.nix
       modules/bluetooth.nix
-      modules/greetd.nix
-      modules/nvidia.nix
-      modules/thunar.nix
       modules/gaming.nix
       modules/battery.nix
       modules/thinkfan.nix
       modules/docker.nix
-      modules/virtualbox.nix
     ];
 
   # Bootloader.
@@ -98,28 +94,10 @@
      hyprland-qt-support
      networkmanager
      networkmanagerapplet
-     pipewire
-     wireplumber
-     polkit
-     blueman
-     thinkfan
-     lm_sensors
      btop-cuda
-     python314Packages.nvidia-ml-py
-     throttled
   ];
   
   programs.hyprland.enable = true;
-
-  # Pipewire configuration
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # jack.enable = true; # for JACK applications
-  };
 
   services.playerctld.enable = true;
   services.dbus.enable = true;
